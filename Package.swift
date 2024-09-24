@@ -54,9 +54,9 @@ let package = Package(
             resources: [
                 .process("Source/Resources")
             ],
-            publicHeadersPath: "Source",
+            publicHeadersPath: "Source/Classes",
             cSettings: [
-                .headerSearchPath("Source"),
+                .headerSearchPath("Source/Classes"),
                 .define("MOBILE_CORESERVICES_IMPORT", to: "<MobileCoreServices/MobileCoreServices.h>"),
                 .define("SYSTEM_CONFIGURATION_IMPORT", to: "<SystemConfiguration/SystemConfiguration.h>")
             ]
