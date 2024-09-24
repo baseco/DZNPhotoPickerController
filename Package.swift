@@ -32,7 +32,11 @@ let package = Package(
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
+            ],
+            linkerSettings: [
+                .linkedFramework("UIKit", .when(platforms: [.iOS]))
             ]
+
         ),
         .target(
             name: "DZNPhotoPickerController",
@@ -59,7 +63,13 @@ let package = Package(
                 .headerSearchPath("Source/Classes"),
                 .define("MOBILE_CORESERVICES_IMPORT", to: "<MobileCoreServices/MobileCoreServices.h>"),
                 .define("SYSTEM_CONFIGURATION_IMPORT", to: "<SystemConfiguration/SystemConfiguration.h>")
+            ],
+            linkerSettings: [
+                .linkedFramework("UIKit", .when(platforms: [.iOS])),
+                .linkedFramework("MobileCoreServices", .when(platforms: [.iOS])),
+                .linkedFramework("SystemConfiguration", .when(platforms: [.iOS]))
             ]
+
         )
     ]
 )
