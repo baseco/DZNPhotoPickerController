@@ -19,32 +19,34 @@ let package = Package(
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
     targets: [
-        // .target(
-        //     name: "DZNPhotoService",
-        //     dependencies: [
-        //         "AFNetworking"
-        //     ],
-        //     path: "Source/Classes",
-        //     sources: [
-        //         "DZNPhotoService",
-        //         "DZNPhotoPickerControllerConstants.h"
-        //     ],
-        //     publicHeadersPath: ".",
-        //     cSettings: [
-        //         .headerSearchPath(".")
-        //     ]
-        // ),
+        .target(
+            name: "DZNPhotoService",
+            dependencies: [
+                "AFNetworking"
+            ],
+            path: "Source/Classes",
+            sources: [
+                "DZNPhotoService",
+                "DZNPhotoPickerControllerConstants.h"
+            ],
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
+        ),
         .target(
             name: "DZNPhotoPickerController",
             dependencies: [
-              //  "DZNPhotoService",
+                "DZNPhotoService",
                 "AFNetworking",
                 "SDWebImage",
                 "DZNEmptyDataSet"
             ],
             path: ".",
             exclude: [
-                "Source/Classes/UIImagePickerController"
+                "Source/Classes/UIImagePickerController",
+                "Source/Classes/DZNPhotoService",
+                
             ],
             sources: [
                 "Source/Classes"
