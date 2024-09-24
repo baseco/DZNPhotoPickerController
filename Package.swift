@@ -18,40 +18,40 @@ let package = Package(
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0"),
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
-    targets: [
-        .target(
-            name: "DZNPhotoService",
-            dependencies: [
-                "AFNetworking"
-            ],
-            path: "Source/Classes",
-            sources: [
-                "DZNPhotoService",
-                "DZNPhotoPickerControllerConstants.h"
-            ],
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath(".")
-            ],
-            linkerSettings: [
-                .linkedFramework("UIKit", .when(platforms: [.iOS]))
-            ]
+    // targets: [
+    //     .target(
+    //         name: "DZNPhotoService",
+    //         dependencies: [
+    //             "AFNetworking"
+    //         ],
+    //         path: "Source/Classes",
+    //         sources: [
+    //             "DZNPhotoService",
+    //             "DZNPhotoPickerControllerConstants.h"
+    //         ],
+    //         publicHeadersPath: ".",
+    //         cSettings: [
+    //             .headerSearchPath(".")
+    //         ],
+    //         linkerSettings: [
+    //             .linkedFramework("UIKit", .when(platforms: [.iOS]))
+    //         ]
 
-        ),
+    //     ),
         .target(
             name: "DZNPhotoPickerController",
             dependencies: [
-                "DZNPhotoService",
+                // "DZNPhotoService",
                 "AFNetworking",
                 "SDWebImage",
                 "DZNEmptyDataSet"
             ],
             path: ".",
-            exclude: [
-                "Source/Classes/UIImagePickerController",
-                "Source/Classes/DZNPhotoService",
+            // exclude: [
+            //     "Source/Classes/UIImagePickerController",
+            //     "Source/Classes/DZNPhotoService",
                 
-            ],
+            // ],
             sources: [
                 "Source/Classes"
             ],
