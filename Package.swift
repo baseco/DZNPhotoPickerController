@@ -47,8 +47,10 @@ let package = Package(
                 "Source/Classes/UIImagePickerController"
             ],
             sources: [
-                "Classes",
                 "Source/Classes"
+            ],
+            resources: [
+                "Source/Resources"
             ],
             publicHeadersPath: "Source",
             cSettings: [
