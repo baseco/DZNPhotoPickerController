@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/AFNetworking/AFNetworking.git", from: "4.0.1"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0"),
-        .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", from: "1.8.1")
+        .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
     targets: [
         .target(
