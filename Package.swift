@@ -50,10 +50,6 @@ let package = Package(
                 "Classes",
                 "Source/Classes"
             ],
-            resources: [
-                .process("Resources"),
-                .process("Source/Resources")
-            ],
             publicHeadersPath: "Source",
             cSettings: [
                 .headerSearchPath("Source"),
