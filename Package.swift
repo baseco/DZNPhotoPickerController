@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "DZNPhotoPickerController",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9) // SPM supports iOS 9 and above
     ],
