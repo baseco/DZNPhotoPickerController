@@ -8,6 +8,8 @@
 //  Licence: MIT-Licence
 //
 
+#import <UIKit/UIKit.h>
+
 UIKIT_EXTERN NSString *const DZNPhotoPickerControllerCropMode;              // An NSString (i.e. square, circular)
 UIKIT_EXTERN NSString *const DZNPhotoPickerControllerCropZoomScale;         // An NSString (from 1.0 to maximum zoom scale, 2.0f)
 UIKIT_EXTERN NSString *const DZNPhotoPickerControllerPhotoMetadata;         // An NSDictionary containing metadata from a captured photo
