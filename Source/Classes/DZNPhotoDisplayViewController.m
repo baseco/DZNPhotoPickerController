@@ -16,7 +16,8 @@
 #import "DZNPhotoMetadata.h"
 #import "DZNPhotoTag.h"
 
-#import "SDWebImageManager.h"
+#import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/SDWebImage.h>
 #import "UIScrollView+EmptyDataSet.h"
 
 static NSString *kDZNPhotoCellViewIdentifier = @"kDZNPhotoCellViewIdentifier";
@@ -512,7 +513,7 @@ Returns the custom collection view layout.
         [self setActivityIndicatorsVisible:YES];
 
         [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:metadata.sourceURL
-                                                              options:SDWebImageCacheMemoryOnly|SDWebImageRetryFailed
+                                                              options:SDWebImageRetryFailed
                                                              progress:NULL
                                                             completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished){
                                                                 if (image) {

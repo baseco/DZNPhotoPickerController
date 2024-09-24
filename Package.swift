@@ -5,7 +5,7 @@ let package = Package(
     name: "DZNPhotoPickerController",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v9) // SPM supports iOS 9 and above
+        .iOS(.v13) // specify the minimum iOS version
     ],
     products: [
         .library(
@@ -14,11 +14,11 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/AFNetworking/AFNetworking.git", from: "4.0.1"),
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0"),
+        .package(url: "https://github.com/baseco/AFNetworking.git", .branch("2.3.1_with_package_swift")),
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0"),
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
-    // targets: [
+    targets: [
     //     .target(
     //         name: "DZNPhotoService",
     //         dependencies: [

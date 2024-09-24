@@ -11,7 +11,7 @@
 #import "DZNPhotoEditorViewController.h"
 #import "DZNPhotoMetadata.h"
 
-#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define kDZNPhotoEditorViewControllerInnerEdgeInset 15.0
 
@@ -560,7 +560,7 @@ DZNPhotoAspect photoAspectFromSize(CGSize aspectRatio)
         [_activityIndicator startAnimating];
         
         [_imageView sd_setImageWithURL:_photoMetadata.sourceURL placeholderImage:nil
-                            options:SDWebImageCacheMemoryOnly|SDWebImageProgressiveDownload|SDWebImageRetryFailed
+                            options:SDWebImageProgressiveLoad|SDWebImageRetryFailed
                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL* imageURL) {
                               if (!error) {
                                   _rButton.hidden = NO;

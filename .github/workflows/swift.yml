@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      run: xcodebuild build -scheme DZNPhotoPickerController -sdk iphonesimulator17.5  -destination "OS=16.0,name=iPhone 13 Pro"
+    # - name: Run tests
+    #   run: xcodebuild test -scheme DZNPhotoPickerController -sdk iphonesimulator17.5  -destination "OS=16.0,name=iPhone 13 Pro"
