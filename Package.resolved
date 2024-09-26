@@ -5,8 +5,8 @@
         "package": "AFNetworking",
         "repositoryURL": "https://github.com/baseco/AFNetworking.git",
         "state": {
-          "branch": "2.3.1_with_package_swift",
-          "revision": "bf8cf4266a748b19a3111afc7af7ac1e62b98790",
+          "branch": "75441a7",
+          "revision": "75441a7d92ac7c37e705d4c744f279b639081253",
           "version": null
         }
       },
@@ -20,12 +20,21 @@
         }
       },
       {
-        "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "package": "FLAnimatedImage",
+        "repositoryURL": "https://github.com/Flipboard/FLAnimatedImage.git",
         "state": {
           "branch": null,
-          "revision": "8a1be70a625683bc04d6903e2935bf23f3c6d609",
-          "version": "5.19.7"
+          "revision": "d4f07b6f164d53c1212c3e54d6460738b1981e9f",
+          "version": "1.0.17"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/baseco/SDWebImage.git",
+        "state": {
+          "branch": "3aa7d98c",
+          "revision": "3aa7d98cc59e327fc5ac220f98fb128544a9d54f",
+          "version": null
         }
       }
     ]
