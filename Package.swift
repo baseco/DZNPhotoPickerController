@@ -14,7 +14,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/baseco/AFNetworking.git", .branch("2.3.1_with_package_swift")),
+        .package(url: "https://github.com/baseco/AFNetworking.git", .revision("75441a7")),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0"),
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
