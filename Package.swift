@@ -15,7 +15,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/baseco/AFNetworking.git", .revision("75441a7d92ac7c37e705d4c744f279b639081253")),
-        .package(url: "https://github.com/baseco/SDWebImage.git", .revision("3aa7d98cc59e327fc5ac220f98fb128544a9d54f")),
+        .package(url: "https://github.com/baseco/FLAnimatedImage.git", .revision("a57dae359597c89e49a2095de79a15709916a694")),
+        .package(url: "https://github.com/baseco/SDWebImage.git", .revision("cc560d6836bae982037ff1f57a11b96935764bab")),
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
     targets: [
@@ -58,9 +59,9 @@ let package = Package(
             resources: [
                 .process("Source/Resources")
             ],
-            publicHeadersPath: "Source/Classes",
+            publicHeadersPath: "Source/Classes/include",
             cSettings: [
-                .headerSearchPath("Source/Classes"),
+                .headerSearchPath("Source/Classes/include/DZNPhotoPickerController"),
                 .define("MOBILE_CORESERVICES_IMPORT", to: "<MobileCoreServices/MobileCoreServices.h>"),
                 .define("SYSTEM_CONFIGURATION_IMPORT", to: "<SystemConfiguration/SystemConfiguration.h>")
             ],
