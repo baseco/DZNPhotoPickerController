@@ -10,7 +10,7 @@
 
 #import <UIKit/UIImagePickerController.h>
 #ifndef SWIFTPM
-#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#import <DZNPhotoPickerController/DZNPhotoPickerControllerConstants.h>
 #else
 #import "DZNPhotoPickerControllerConstants.h"
 #endif

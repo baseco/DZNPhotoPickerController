@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 #ifndef SWIFTPM
-#import <DZNPhotoPickerControlller/DZNPhotoEditorViewController.h>
+#import <DZNPhotoPickerController/DZNPhotoEditorViewController.h>
 #else
 #import "DZNPhotoEditorViewController.h"
 #endif
