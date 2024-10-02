@@ -8,5 +8,13 @@
 //  Licence: MIT-Licence
 //
 
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/UIImagePickerController+Edit.h>
+#else
 #import "UIImagePickerController+Edit.h"
+#endif
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/UIImagePickerController+Block.h>
+#else
 #import "UIImagePickerController+Block.h"
+#endif

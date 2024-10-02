@@ -9,7 +9,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#else
 #import "DZNPhotoPickerControllerConstants.h"
+#endif
 
 /**
  The data model to encapsulate meta data about a photo, provided by the photo service.

@@ -64,6 +64,7 @@ let package = Package(
                 .headerSearchPath("Source/Classes/include/DZNPhotoPickerController"),
                 .define("MOBILE_CORESERVICES_IMPORT", to: "<MobileCoreServices/MobileCoreServices.h>"),
                 .define("SYSTEM_CONFIGURATION_IMPORT", to: "<SystemConfiguration/SystemConfiguration.h>")
+                .define("SWIFTPM", to: "1")
             ],
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),

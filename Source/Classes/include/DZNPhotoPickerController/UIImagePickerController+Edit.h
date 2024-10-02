@@ -9,7 +9,11 @@
 //
 
 #import <UIKit/UIImagePickerController.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#else
 #import "DZNPhotoPickerControllerConstants.h"
+#endif
 
 /** 
  A category class allowing custom edition modes on UIImagePickerController with specially crop for circular avatars like the Contacts app on iOS7.

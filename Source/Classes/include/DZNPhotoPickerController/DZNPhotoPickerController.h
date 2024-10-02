@@ -9,7 +9,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoEditorViewController.h>
+#else
 #import "DZNPhotoEditorViewController.h"
+#endif
 
 @protocol DZNPhotoPickerControllerDelegate;
 

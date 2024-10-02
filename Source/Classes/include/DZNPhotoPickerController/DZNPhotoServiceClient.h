@@ -9,8 +9,16 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoServiceClientProtocol.h>
+#else
 #import "DZNPhotoServiceClientProtocol.h"
+#endif
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#else
 #import "DZNPhotoPickerControllerConstants.h"
+#endif
 
 UIKIT_EXTERN NSString *const DZNPhotoServiceClientConsumerKey;
 UIKIT_EXTERN NSString *const DZNPhotoServiceClientConsumerSecret;

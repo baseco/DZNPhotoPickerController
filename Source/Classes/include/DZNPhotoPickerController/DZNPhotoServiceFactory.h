@@ -9,8 +9,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#else
 #import "DZNPhotoPickerControllerConstants.h"
+#endif
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoServiceClientProtocol.h>
+#else
 #import "DZNPhotoServiceClientProtocol.h"
+#endif
 
 /**
  A factory manager for creating multiple HTTP clients based on a photo search service.

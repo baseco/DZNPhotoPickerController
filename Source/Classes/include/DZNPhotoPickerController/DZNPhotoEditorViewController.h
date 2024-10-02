@@ -9,7 +9,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifndef SWIFTPM
+#import <DZNPhotoPickerControlller/DZNPhotoPickerControllerConstants.h>
+#else
 #import "DZNPhotoPickerControllerConstants.h"
+#endif
 
 @class DZNPhotoMetadata;
 
