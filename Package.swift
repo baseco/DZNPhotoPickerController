@@ -47,21 +47,18 @@ let package = Package(
                 "SDWebImage",
                 "DZNEmptyDataSet"
             ],
-            path: ".",
+            path: "Source/Classes",
             // exclude: [
             //     "Source/Classes/UIImagePickerController",
             //     "Source/Classes/DZNPhotoService",
                 
             // ],
-            sources: [
-                "Source/Classes"
-            ],
             resources: [
-                .process("Source/Resources")
+                .process("../Resources")
             ],
-            publicHeadersPath: "Source/Classes/include",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("Source/Classes/include/DZNPhotoPickerController"),
+                .headerSearchPath("include/DZNPhotoPickerController"),
                 .define("MOBILE_CORESERVICES_IMPORT", to: "<MobileCoreServices/MobileCoreServices.h>"),
                 .define("SYSTEM_CONFIGURATION_IMPORT", to: "<SystemConfiguration/SystemConfiguration.h>"),
                 .define("SWIFTPM", to: "1")
