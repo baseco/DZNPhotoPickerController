@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/baseco/AFNetworking.git", .revision("75441a7d92ac7c37e705d4c744f279b639081253")),
         .package(url: "https://github.com/baseco/FLAnimatedImage.git", .revision("a57dae359597c89e49a2095de79a15709916a694")),
-        .package(url: "https://github.com/baseco/SDWebImage.git", .revision("cc560d6836bae982037ff1f57a11b96935764bab")),
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.21.1"),
         .package(url: "https://github.com/dzenbot/DZNEmptyDataSet.git", .branch("master"))
     ],
     targets: [

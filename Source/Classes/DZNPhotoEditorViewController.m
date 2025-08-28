@@ -560,7 +560,7 @@ DZNPhotoAspect photoAspectFromSize(CGSize aspectRatio)
         [_activityIndicator startAnimating];
         
         [_imageView sd_setImageWithURL:_photoMetadata.sourceURL placeholderImage:nil
-                            options:SDWebImageProgressiveDownload|SDWebImageRetryFailed
+                               options:SDWebImageProgressiveLoad|SDWebImageRetryFailed
                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL* imageURL) {
                               if (!error) {
                                   _rButton.hidden = NO;
